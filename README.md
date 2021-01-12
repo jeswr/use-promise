@@ -18,4 +18,4 @@ function MyReactComponent() {
 ```
 
 ## License
-©2021–present Jesse Wright, [MIT License](https://github.com/jeswr/use-promise/blob/master/LICENSE.md).
+©2021–present Jesse Wright, [MIT License](https://github.com/jeswr/use-promise/blob/main/LICENSE).
