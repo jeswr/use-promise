@@ -6,7 +6,7 @@ React hook to resolve promises
 ```tsx
 import usePromise from 'use-promise';
 
-const myPromise = async () => 'my data';
+const myPromise = (async () => 'my data')();
 
 function MyReactComponent() {
   const data: string = usePromise(myPromise);

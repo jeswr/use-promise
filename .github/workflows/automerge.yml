@@ -15,4 +15,5 @@ jobs:
         uses: "pascalgn/automerge-action@v0.13.0"
         env:
           MERGE_LABELS: "dependencies"
+          MERGE_FILTER_AUTHOR: "dependabot"
           GITHUB_TOKEN: "${{ secrets.GH_TOKEN }}"
