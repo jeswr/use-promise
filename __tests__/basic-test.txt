@@ -1,9 +1,0 @@
-import usePromise from '../lib';
-
-const myPromise = (async () => 'my data')();
-
-describe('main test suite', () => {
-  it('Resolves the promise', () => {
-    expect(usePromise(myPromise)).toEqual(undefined);
-  });
-});

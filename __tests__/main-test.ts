@@ -13,19 +13,16 @@ const rejecting = new Promise((resolve, reject) => {
 });
 
 test('should increment counter', () => {
-  // expect.assertions(2);
   act(() => {
     const { result } = renderHook(() => usePromise(myPromise));
     setTimeout(() => {
       expect(result.current).toEqual('my data');
     }, 10);
-    // result = renderHook(() => usePromise(myPromise)).result.current;
   });
   act(() => {
     const { result } = renderHook(() => usePromise(rejecting));
     setTimeout(() => {
       expect(result.current).rejects.toEqual('Mock Error');
     }, 10);
-    // result = renderHook(() => usePromise(myPromise)).result.current;
   });
 });
