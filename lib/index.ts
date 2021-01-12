@@ -3,7 +3,8 @@ import { useReducer, useEffect } from 'react';
 export default function usePromise<T>(promise: Promise<T>): T | undefined {
   const [resolved, dispatch] = useReducer(
     (s: T | undefined, a: T | undefined) => a,
-    undefined);
+    undefined,
+  );
   useEffect(() => {
     (async () => {
       try {

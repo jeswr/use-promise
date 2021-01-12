@@ -3,14 +3,28 @@ import usePromise from '../lib';
 
 const myPromise = (async () => 'my data')();
 
+const rejecting = new Promise((resolve, reject) => {
+  try {
+    throw new Error('Mock Error');
+  } catch (e) {
+    reject(e);
+  }
+  resolve('Resolving Promise');
+});
+
 test('should increment counter', () => {
-  // expect.assertions(1);
+  // expect.assertions(2);
   act(() => {
     const { result } = renderHook(() => usePromise(myPromise));
-    let r: string | undefined;
     setTimeout(() => {
-      r = result.current;
-      expect(r).toEqual('my data');
+      expect(result.current).toEqual('my data');
+    }, 10);
+    // result = renderHook(() => usePromise(myPromise)).result.current;
+  });
+  act(() => {
+    const { result } = renderHook(() => usePromise(rejecting));
+    setTimeout(() => {
+      expect(result.current).rejects.toEqual('Mock Error');
     }, 10);
     // result = renderHook(() => usePromise(myPromise)).result.current;
   });
