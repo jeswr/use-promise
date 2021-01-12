@@ -13,6 +13,7 @@ const rejecting = new Promise((resolve, reject) => {
 });
 
 test('should increment counter', () => {
+  expect.assertions(2);
   act(() => {
     const { result } = renderHook(() => usePromise(myPromise));
     setTimeout(() => {
