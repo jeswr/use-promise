@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/jeswr/use-promise#readme",
   "devDependencies": {
-    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-env": "^7.12.16",
     "@babel/preset-react": "^7.12.13",
     "@semantic-release/npm": "^7.0.10",
     "@testing-library/jest-dom": "^5.11.9",
