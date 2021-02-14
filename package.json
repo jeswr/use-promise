@@ -1,5 +1,5 @@
 {
-  "name": "use-promise",
+  "name": "@jeswr/use-promise",
   "version": "0.0.0-development",
   "description": "Takes a logical statement and simplifies it.",
   "main": "dist/index.js",
