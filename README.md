@@ -2,7 +2,7 @@
 React hook to resolve promises
 
 [![GitHub license](https://img.shields.io/github/license/jeswr/use-promise.svg)](https://github.com/jeswr/use-promise/blob/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/use-promise.svg)](https://www.npmjs.com/package/use-promise)
+[![npm version](https://img.shields.io/npm/v/@jeswr/use-promise.svg)](https://www.npmjs.com/package/@jeswr/use-promise)
 [![build](https://img.shields.io/github/workflow/status/jeswr/use-promise/Node.js%20CI)](https://github.com/jeswr/use-promise/tree/main/)
 [![Dependabot](https://badgen.net/badge/Dependabot/enabled/green?icon=dependabot)](https://dependabot.com/)
 [![Downloads](https://img.shields.io/github/downloads/jeswr/use-promise/total)](https://img.shields.io/github/downloads/jeswr/use-promise/total)
